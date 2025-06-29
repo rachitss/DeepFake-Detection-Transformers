@@ -1,4 +1,5 @@
 DFD-T.code-workspace
 *.pt
+*.pth
 DFD_ViT.ipynb
 todo.txt
