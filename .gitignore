@@ -3,3 +3,4 @@ DFD-T.code-workspace
 *.pth
 DFD_ViT.ipynb
 todo.txt
+valid_train_df.csv
