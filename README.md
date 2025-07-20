@@ -1,9 +1,9 @@
-Simple Deepfake Detection using Vision Transformers (ViT)
+Simple Deepfake Detection Baselines using Vision Transformers (ViT), Swin Transformers, and Efficientnet
 
 These are different backbone models attached with a binary classifier to find the most appropriate backbone.
 These are purely for baseline, with no further changes
 
-All models are trained on DFDC sample dataset available for free on Kaggle
+All models are trained on DFDC sample dataset available for free on Kaggle, on a laptop with RTX 3050 6 GB
 
 ViT_FeatEx - Feature extraction using ViT then training classifier on the features
 ViT_FC - Attaching classifier on top of ViT and training it with last few layers of ViT
@@ -13,3 +13,7 @@ These models are trained similarly to ViT_FC_comb
 SwinT - Swin Transformer Tiny
 SwinT_base - Swin Transformer Base
 EfficientNet_B0 - EfficientNet B0
+
+
+
+All open source content used belongs to their respective owners.
