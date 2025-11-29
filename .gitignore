@@ -6,3 +6,4 @@ todo.txt
 valid_train_df.csv
 utility.ipynb
 rough.ipynb
+inference/rough.py
