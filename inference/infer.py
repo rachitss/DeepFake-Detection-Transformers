@@ -1,3 +1,4 @@
+import shutil
 from transformers import AutoImageProcessor, AutoModelForImageClassification
 from PIL import Image
 import pandas as pd
@@ -36,7 +37,6 @@ def main():
     # Load the model and processor
     processor = AutoImageProcessor.from_pretrained("microsoft/swin-tiny-patch4-window7-224")
     model = AutoModelForImageClassification.from_pretrained("microsoft/swin-tiny-patch4-window7-224", num_labels=1, ignore_mismatched_sizes=True)
-    criterion = nn.BCEWithLogitsLoss(reduction='none')  # For binary classification
 
 
 
@@ -85,9 +85,8 @@ def main():
     print(f"Predicted class: {pred}")
 
     # Cleanup
-    for f in os.listdir(path):
-        fp = os.path.join(path, f)
-        os.remove(fp)
+    import shutil
+    shutil.rmtree(path)
 
 
 
